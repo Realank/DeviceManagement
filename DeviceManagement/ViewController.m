@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:161/255.0 blue:228/255.0 alpha:1];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
